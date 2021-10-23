@@ -1,103 +1,126 @@
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="resources/css/style.css" />
-    <link href="/resources/vendors/all.css" rel="stylesheet" />
+
     <title>Habib Mboup|Full Stack Web Weveloper</title>
-  </head>
-  <body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.css" integrity="sha512-Q0DfJ+I5cbH4Wm20NlPZ/fENHil7k3ZgzI9b71LfQAB1IlM8Gt7aO7eOPX2QzYT+4fZaF6u1kSfZAHczl4r/9Q==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="resources/css/style.css" />
+</head>
+
+<body>
     <header>
-      <nav class="container">
         <div class="logo">
-          <h4>Habib Mboup</h4>
-          <p>Full Stack Web Developer</p>
+            <!-- <img src="resources/images/" alt=""> -->
+            <p>
+                &lt; Devnotch &gt;
+            </p>
         </div>
-        <ul class="nav-elements">
-          <li><a href="">About</a></li>
-          <li><a href="">Realisations</a></li>
-          <li><a href="">Contact</a></li>
-        </ul>
-        <div class="hero-text-box">
-          <h1>Hello, I&apos;m Habib</h1>
-          <p>FULL STACK WEB DEVELOPER</p>
-          <p><span><i class="fas fa-map-marker-alt"></i></span></i>&nbsp;Montreal</i></p>
-        </div>
-      </nav>
+        <button class="nav-toggle" area-label='toggle-navigation'>
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="#home" class="nav__link">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#services" class="nav__link">My Services</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#about" class="nav__link">About me</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">My Work</a>
+                </li>
+            </ul>
+        </nav>
     </header>
-    <section class="about-me"> 
-      <div class="container grid flex">
-            <h2>About me </h2>
-        <div class="self-description grid-2-columns">
-          <div class="description-text">
-                <p>
-                        I am a Full Stack Web developer, bilingual with three years of
-                        experience in the insurance industry. I have versatile skill set
-                        with experience in web development and customer service, recognized
-                        skills in mentoring, mediating between employees, and leading team
-                        projects. I have successfully implemented current web design
-                        technology to develop and maintain web apps for start-ups as a
-                        Freelance web developer. I am extremely motivated and always want to
-                        further my knowledge and skills. I am a passionate problem solver
-                        and creative thinker ready to take on any challenge.
-              </p>
-          </div>
-          <div class="profile-picture ">
-                <img src="resources/images/profile.JPG" alt="Habib Portrait" />
-             </div>
-        </div>
-        
-        <div class="container ">
-          <span class="skills-title"><h4>Technologies I Have worked with:</h4></span>
-          <div class=" skills-box flex grid-2-rows ">
-          <div class="icon card ">
-            <img src="resources/icons/html5.png" alt="html5 logo" />
-            <h5>Html5</h5>
-          </div>
-          <div class="icon card">
-            <img src="resources/icons/css3.png" alt="css3 logo" />
-            <h5>Css3</h5>
-          </div>
-          <div class="icon card">
-            <img src="resources/icons/sass.png" alt="Sass logo" />
-            <h5>Sass</h5>
-          </div>
-          <div class="icon card">
-            <img src="resources/icons/js.png" alt="JavaScript logo" />
-            <h5>JavaScript</h5>
-          </div>
-          <div class="icon card">
-            <img src="resources/icons/jquery.gif" alt="Jquery logo" />
-            <h5>JavaScript</h5>
-          </div>
-          <div class="icon card">
-            <img src="resources/icons/react.png" alt="React logo" />
-            <h5>React</h5>
-          </div>
-          <div class="icon card">
-            <img src="resources/icons/ruby.png" alt="Ruby logo" />
-            <h5>Ruby</h5>
-          </div>
-          <div class="icon card">
-            <img src="resources/icons/rails.png" alt="Rails logo" />
-            <h5>Rails</h5>
-          </div>
-          <div class="icon card">
-            <img src="resources/icons/redux.png" alt="Redux logo" />
-            <h5>Redux</h5>
-          </div>
-          <div class="icon card">
-            <img src="resources/icons/postgresql.png" alt="postgresql logo" />
-            <h5>Postgresql</h5>
-          </div>
-        </div>
-      </div>
+    <!---Introduction--->
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            Hi, I am <strong>Habib Mboup</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">Full-stack developer</p>
+        <img src="resources/images/profile.JPG" alt="A picture of Habib Mboup, Full-stack developer">
     </section>
-    <section class="realisations">
-      <div class="container grid flex">
-        <h2>Realisations</h2>
-      </div>
+    <!--- Services --->
+    <section class="my-services" id="services">
+        <h2 class="section__title section__title--services">What I do</h2>
+
+        <div class="services">
+            <div class="service">
+                <h3>Web Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui perferendis voluptatum sapiente, corporis ratione repellat voluptas veritatis omnis iste, totam id. Amet quam fuga rem obcaecati. Cum molestiae aut soluta dicta doloremque enim!
+                    Pariatur sapiente porro possimus inventore aut dicta cupiditate nisi autem cumque asperiores.</p>
+            </div>
+            <!-- /Service -->
+            <div class="service">
+                <h3>E-commerce</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptas ab amet facere doloremque nulla laborum quibusdam dolorem facilis magni soluta quasi blanditiis nesciunt quod commodi velit, explicabo nihil ipsam. Dignissimos ducimus
+                    accusantium obcaecati facere tenetur quaerat. Quibusdam obcaecati suscipit laboriosam amet praesentium voluptatibus nam?</p>
+            </div>
+            <!-- /Service -->
+            <div class="service">
+                <h3>Wordpress</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe natus necessitatibus veritatis maiores soluta. Explicabo quaerat, corrupti illo, odio enim voluptates optio placeat dolore recusandae porro ut debitis quidem vel fuga omnis,
+                    eius quo officia ab. Ab facere id quaerat quia molestias animi fugiat atque?</p>
+            </div>
+            <!-- /Service -->
+        </div>
+        <a href="" class="btn">My Work</a>
     </section>
-  </body>
+    <!--- About me --->
+    <section class="about-me" id='about'>
+        <h2 class="section__title section__title--about">Who I am</h2>
+        <p class="section__subtitle section__subtitle--about"></p>
+        <div class="about-me__body">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus expedita laborum ab saepe enim animi sapiente corrupti quaerat velit aspernatur quia nam rem temporibus ipsa nulla quibusdam esse quasi deleniti consectetur, qui id excepturi
+                officiis. Nesciunt nihil vero consequatur deserunt fuga autem consectetur sequi accusamus.
+            </p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis est quos, voluptatibus, laboriosam nesciunt officia quas quaerat ullam maiores laudantium harum architecto? Ea totam incidunt adipisci, aliquid est numquam saepe in veritatis
+                error, doloribus eum nemo deserunt aut voluptatem eligendi quibusdam officiis alias magnam quas?
+            </p>
+        </div>
+        <img src="resources/images/profile.JPG" alt="Habib Mboup Web developer">
+    </section>
+    <!--- My Work --->
+    <section class="my-work" id="work">
+        <h2 class="section__title"></h2>
+        <p class="section__subtitle"></p>
+        <div class="portfolio">
+            <!-- Portfolio item1-->
+            <a href="#" class="portfolio__item">
+                <img src="resources/images/item1.png" alt="">
+            </a>
+            <!-- Portfolio item2-->
+            <a href="#" class="portfolio__item">
+                <img src="resources/images/item2.png" alt="">
+            </a>
+            <!-- Portfolio item3-->
+            <a href="#" class="portfolio__item">
+                <img src="resources/images/item3.png" alt="">
+            </a>
+        </div>
+    </section>
+    <!--- Footer --->
+    <footer>
+
+        <a href="mailto:habib.softdev@gmail.com" class="footer__link">habib.softdev@gmail.com</a>
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a href="" class="social-list__link"></a>
+            </li>
+        </ul>
+    </footer>
+</body>
+
 </html>
